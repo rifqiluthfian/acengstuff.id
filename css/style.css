@@ -307,8 +307,7 @@ color: #AC5F55;
     width: 100%;
     margin: 50px auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    /* grid-template-columns: repeat(auto-fill, minmax(250,1fr)); */
+    grid-template-columns: repeat(auto-fill,minmax(150px,3fr));
     grid-gap: 30px;
 }
 .card {
@@ -396,4 +395,31 @@ color: #AC5F55;
         display: block;
         padding: 15px;
     }
+    .cards{
+        grid-template-columns: repeat(auto-fill, minmax(250,1fr));
+    }
+    .produk-content h1:hover::after,
+    .produk-content h1.active::after{
+    width: 50%;
+    left: 120px;
+}
+/* big previous & next buttons */
+.flickity-prev-next-button {
+    display: none;
+}
+
+.flickity-page-dots {
+    display: none;
+}
+
+/* icon color */
+.flickity-button-icon {
+    display: none;
+}
+
+/* hide disabled button */
+.flickity-button:disabled {
+    display: none;
+}
+
 }
